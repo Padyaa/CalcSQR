@@ -2,15 +2,15 @@ package ru.netilogy.sqr;
 
 public class SQRService {
 
-    public int calcSQR(int x, int y) {
-        int count = 0;
+    public int calcSQR(int min, int max) {
+        int counter = 0;
         for (int i = 10; i <= 99; i++) {
-            if (i * i >= x) {
-                if (i * i <= y) {
-                    count++;
+            if (i * i >= min) {
+                if (i * i <= max) {
+                    counter++;
                 }
             }
         }
-        return count;
+        return counter;
     }
 }
